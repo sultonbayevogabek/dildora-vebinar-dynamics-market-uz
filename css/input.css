@@ -23,13 +23,45 @@
   --breakpoint-1900px: 1900px;
 }
 
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/sf_pro_300.woff2') format("woff2")
+}
+
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/sf_pro_400.woff2') format("woff2")
+}
+
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/sf_pro_500.woff2') format("woff2")
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/bebas_neue.woff2') format("woff2")
+}
+
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'SF-Pro', sans-serif;
   @apply text-[14px] 800px:text-[16px];
 }
 
 .wrapper {
-  @apply 800px:max-w-[90%] 1700px:max-w-[1544px] mx-auto px-3;
+  @apply 800px:max-w-[90%] 1400px:max-w-[1304px] mx-auto px-3;
 }
 
 .custom-shadow {
@@ -40,6 +72,28 @@ body {
   background: linear-gradient(103.84deg, #E5FBEB 3.62%, #E9F7FD 50.63%, #EEFFF3 97%);
 }
 
-.button-gradient {
-  background: linear-gradient(90deg, #00B430 0%, #00A8BB 100%);
+.intro {
+  background: url("../img/bg-intro@1x.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .intro {
+    background: url("../img/bg-intro@2x.jpg");
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+}
+
+.button {
+  width: 480px;
+  height: 56px;
+  max-width: 100%;
+  background: #5E46E4;
+  color: white;
+  border-radius: 50%;
+  font-weight: 500;
 }
