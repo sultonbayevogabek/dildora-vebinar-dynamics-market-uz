@@ -1,7 +1,7 @@
 const commentsSlider = new Splide('#comments-slider', {
   perPage: 4,
   gap: 30,
-  arrows: false,
+  arrows: true,
   pagination: false,
   breakpoints: {
     1200: {
@@ -13,7 +13,7 @@ const commentsSlider = new Splide('#comments-slider', {
       gap: 12
     }
   },
-  autoplay: true,
+  autoplay: false,
   type: 'loop'
 });
 
