@@ -170,7 +170,7 @@
         <p>Harbir kichik jarayonga ham rahbarning aralashuvi (mikromenejment)</p>
       </div>
 
-      <div class="col-span-12 rounded-2xl border border-[#5E46E4] p-4 1200px:p-5 bg-[#5E46E414] bg-opacity-[8%] custom-shadow flex flex-col 600px:flex-col 600px:items-center gap-4 1200px:gap-5">
+      <div class="col-span-12 rounded-2xl border border-[#5E46E4] p-4 1200px:p-5 bg-[#5E46E414] bg-opacity-[8%] custom-shadow flex flex-col 600px:flex-row 600px:items-center gap-4 1200px:gap-5">
         <img class="w-[70px] 1200px:w-[112px] shrink-0 aspect-[112/50]" src="img/tenx.png" alt="">
 
         <p class="text-[#3F3E46] 1200px:text-xl">Aytgancha! O'rgatiladigan har bir qadam 100% O'zbek biznesida 10 martalab tajribadan o'tgan bo'lib amalda natijaga olib boradigan bilimlar</p>
@@ -275,6 +275,37 @@
   </div>
 </section>
 
+<section class="py-6 1200px:py-12">
+  <div class="wrapper flex flex-col gap-6">
+    <h2 class="font-medium text-3xl 1200px:text-4xl font-bebas text-center">Bizning <span class="text-[#5E46E4]">ta'riflar</span></h2>
+
+    <div
+      class="flex flex-col 900px:flex-row items-center justify-between gap-4 900px:gap-[24px] py-[12px] px-[20px] rounded-[16px] 800px:rounded-[20px] 1200:rounded-[28px] custom-shadow bg-[rgb(255,255,255)] border border-[#DFEDF4] text-[#28424E]">
+
+      <div class="flex items-start justify-center gap-[12px]">
+        <img class="w-7 1200px:w-8 shrink-0" src="img/exclamation.png" alt="">
+        <div class="1200px:text-[18px]">Ushbu chegirma 18 daqiqa ichida ro'yxatdan o'tganlar uchun amalga oshadi</div>
+      </div>
+
+      <div class="flex items-center gap-[16px] leading-[1]" data-timer>
+        <img class="w-[40px] mr-[12px]" src="img/timer.png" alt="">
+
+        <div class="flex flex-col gap-[4px] text-center">
+          <div class="font-bebas text-[32px]" data-minutes>01</div>
+          <div class="text-[12px]">daqiqa</div>
+        </div>
+
+        <div class="w-[1px] h-[30px] bg-[#DFEDF4]"></div>
+
+        <div class="flex flex-col gap-[4px] text-center">
+          <div class="font-bebas text-[32px]" data-seconds>59</div>
+          <div class="text-[12px]">soniya</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--Scroll to top-->
 <button id="scrollTopBtn"
         class="hidden fixed bottom-6 right-6 bg-[#5E46E4] px-4 py-2 rounded-full shadow-lg  transition">
@@ -374,6 +405,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/timer.js"></script>
 <script src="js/form.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/accordion.js"></script>
