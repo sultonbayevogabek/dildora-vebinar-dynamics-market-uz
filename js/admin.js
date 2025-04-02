@@ -74,7 +74,8 @@ function updateTable(data) {
   const rows = [
     {name: 'Sahifaga kirganlar', value: pageVisits.length},
     {name: 'Ro\'yxatdan o\'tish tugmasini bosganlar', value: registrationClicks.length},
-    {name: 'Ma\'lumotlarini yuborganlar', value: dataSubmissions.length}
+    {name: 'Ma\'lumotlarini yuborganlar', value: dataSubmissions.length},
+    {name: 'Obuna bo\'lish tugmasini bosganlar', value: telegramSubscriptions.length}
   ];
 
   statsTable.innerHTML = rows.map(row => `
