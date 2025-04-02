@@ -491,7 +491,7 @@
 
     <div class="grid grid-cols-2 gap-4 1200px:gap-6">
       <div class="col-span-2 700px:col-span-1 flex flex-col gap-6 bg-[#E7FAE3] border border-[#DFEDF4] rounded-2xl p-4 1200px:p-6 custom-shadow relative">
-        <img class="absolute top-[-30px] right-0 w-6" src="img/left.svg" alt="">
+        <img class="hidden 1200px:block absolute top-[-30px] right-0 w-6" src="img/left.svg" alt="">
 
         <h3 class="font-medium text-2xl 1200px:text-3xl">Seminarda qatnashish</h3>
 
@@ -532,13 +532,13 @@
           class="flex items-start gap-3 900px:gap-[18px] py-[12px] px-[20px] rounded-[16px] 800px:rounded-[20px] 1200:rounded-[28px] custom-shadow bg-white font-thin">
           <img class="w-10 1200px:w-12" src="img/good.svg" alt="">
 
-          <p>Bularning natijasida: qisqa muddatda biznesda juda tez o`sish va rahbarsiz
+          <p>Bularning natijasida: qisqa muddatda biznesda juda tez o'sish va rahbarsiz
             tizimli ishlaydigan jamoa</p>
         </div>
       </div>
 
       <div class="col-span-2 700px:col-span-1 flex flex-col gap-6 bg-[#FFEDED] border border-[#DFEDF4] rounded-2xl p-4 1200px:p-6 custom-shadow relative">
-        <img class="absolute top-[-30px] right-0 w-6" src="img/left.svg" alt="">
+        <img class="hidden 1200px:block absolute top-[-30px] left-0 w-6" src="img/right.svg" alt="">
 
         <h3 class="font-medium text-2xl 1200px:text-3xl">Seminarda qatnashmaslik</h3>
 
@@ -546,44 +546,45 @@
           <li class="flex items-start gap-3">
             <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
 
-            <p class="1200px:text-xl">Aniq formula asosida tez fursatda jamoa qurish</p>
+            <p class="1200px:text-xl">Yillar davomida jamoa yig'a olmaslik</p>
           </li>
           <li class="flex items-start gap-3">
             <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
 
-            <p class="1200px:text-xl">Korxonada birdamlik va halollik muhtini yaratish</p>
+            <p class="1200px:text-xl">Korxonada g'iybatlar, yolg'on va o'g'riliklar ko'payishi</p>
           </li>
           <li class="flex items-start gap-3">
             <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
 
-            <p class="1200px:text-xl">To'g'ri xodimlarni ishga olish</p>
+            <p class="1200px:text-xl">Har doim mos bo'lmagan xodimlarni ishga olish</p>
           </li>
           <li class="flex items-start gap-3">
             <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
 
-            <p class="1200px:text-xl">Xodimlarning motivatsiyasini ko'tarish orqali 2x samaradorlik</p>
+            <p class="1200px:text-xl">Har doim yaxshi xodimlarni ushlab qololmaslik</p>
           </li>
           <li class="flex items-start gap-3">
             <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
 
-            <p class="1200px:text-xl">Xodimlarning ketib qolishini oldini olish</p>
+            <p class="1200px:text-xl">Hardoim tepasida turib ishlatishga majbur</p>
           </li>
           <li class="flex items-start gap-3">
             <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
 
-            <p class="1200px:text-xl">Rahbarsz ishlaydigan tizim</p>
+            <p class="1200px:text-xl">Boshqaruv bilimi yo'qligi tufayli tartibsizlik</p>
           </li>
         </ul>
 
         <div
           class="flex items-start gap-3 900px:gap-[18px] py-[12px] px-[20px] rounded-[16px] 800px:rounded-[20px] 1200:rounded-[28px] custom-shadow bg-white font-thin">
-          <img class="w-10 1200px:w-12" src="img/good.svg" alt="">
+          <img class="w-10 1200px:w-12" src="img/bad.svg" alt="">
 
-          <p>Bularning natijasida: qisqa muddatda biznesda juda tez o`sish va rahbarsiz
-            tizimli ishlaydigan jamoa</p>
+          <p>Bularning natijasida: Biznesda o'sa olmaslik va 1-2 yilda umuman biznesdan chiqib ketish</p>
         </div>
       </div>
     </div>
+    <button class="button block mx-auto w-full 1200px:w-1/2" data-register-button>Ro'yxatdan o'tish
+    </button>
   </div>
 </section>
 
@@ -591,100 +592,13 @@
 
 <!--Scroll to top-->
 <button id="scrollTopBtn"
-        class="hidden fixed bottom-6 right-6 bg-[#5E46E4] px-4 py-2 rounded-full shadow-lg  transition">
+        class="hidden fixed bottom-6 right-6 bg-[#5E46E4] px-3 py-2 rounded-full shadow-lg  transition">
   <svg class="-rotate-90" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
           d="M8.35947 5.34684C7.88018 5.8093 7.88018 6.55912 8.35947 7.02158L14.037 12.5L8.35947 17.9785C7.88018 18.441 7.88018 19.1907 8.35947 19.6531C8.83876 20.1156 9.61571 20.1156 10.095 19.6531L16.6405 13.3373C17.1198 12.8749 17.1198 12.1252 16.6405 11.6627L10.095 5.34684C9.61571 4.88439 8.83876 4.88439 8.35947 5.34684Z"
           fill="white"/>
   </svg>
 </button>
-
-<div class="fixed inset-[0] w-screen max-h-screen flex justify-center items-center bg-[#0000004d] p-3 hidden"
-     id="form-backdrop" data-modal-close>
-  <div class="w-[800px] max-w-[100%] max-h-full grid grid-cols-2 rounded-[20px] overflow-auto">
-    <div class="col-span-2 900px:col-span-1 p-4 800px:p-5 1200px:p-6 bg-white">
-      <form
-        data-form
-        class="flex flex-col gap-[24px]">
-        <h2 class="text-[16px] 800px:text-[18px] 1200px:text-[22px] font-semibold">
-          Ariza yuborish
-        </h2>
-
-        <div
-          data-form-alert
-          class="p-4 text-center font-medium text-red-600 rounded-lg bg-red-100 hidden">
-        </div>
-
-        <div class="flex flex-col gap-[24px] grow">
-          <label class="flex flex-col gap-2">
-            <span>Ismingiz</span>
-            <input class="w-full h-12 rounded-2xl px-3 border border-gray-300 bg-white placeholder:text-[#BAC2CA]"
-                   type="text"
-                   placeholder="Ismingizni kiriting"
-                   data-form-name
-            >
-          </label>
-
-          <label class="flex flex-col gap-2 relative">
-            <span>Telefon raqamingiz</span>
-
-            <input class="w-[7ch] absolute left-0 bottom-0 h-12 rounded-2xl px-3 bg-transparent" type="tel" disabled
-                   value="+998">
-
-            <input
-              data-form-phone
-              class="w-full h-12 rounded-2xl px-3 bg-white border border-gray-300 placeholder:text-[#BAC2CA] pl-[5.5ch] phone"
-              type="tel">
-          </label>
-
-          <label class="flex flex-col gap-2">
-            <span>Telegram foydalanuvchi nomi</span>
-            <input class="w-full h-12 rounded-2xl px-3 border border-gray-300 bg-white placeholder:text-[#BAC2CA]"
-                   type="text"
-                   maxlength="20"
-                   data-form-telegram
-                   placeholder="@username"
-            >
-          </label>
-        </div>
-
-        <button
-          data-form-button
-          class="w-full h-[50px] 1200px:h-[60px] px-[60px] mt-5 uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
-          Yuborish
-        </button>
-      </form>
-    </div>
-    <div class="col-span-2 900px:col-span-1 p-4 800px:p-5 1200px:p-6 bg-gradient flex flex-col gap-5">
-      <h2 class="font-semibold text-[18px] leading-[1.2]">
-        <span class="text-red-500">*</span> Agar siz hoziroq ariza qoldirsangiz bonuslarga ega bo'lasiz
-      </h2>
-
-      <div class="flex flex-col gap-4">
-        <div>
-          <div class="text-[18px] text-[#00B430] font-semibold">01</div>
-          <p>Intizom video darsligi</p>
-        </div>
-        <div>
-          <div class="text-[18px] text-[#00B430] font-semibold">02</div>
-          <p>Ishga kirish video darsligi</p>
-        </div>
-        <div>
-          <div class="text-[18px] text-[#00B430] font-semibold">03</div>
-          <p>Offlayn trening "zapisi"</p>
-        </div>
-        <div>
-          <div class="text-[18px] text-[#00B430] font-semibold">04</div>
-          <p>Sun'iy intellektdan foydalanish bo'yicha video darslik</p>
-        </div>
-        <div>
-          <div class="text-[18px] text-[#00B430] font-semibold">05</div>
-          <p>Zarina Ismoilovnaning yopiq klubi</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="js/slider.js"></script>
