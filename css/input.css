@@ -68,8 +68,8 @@ body {
   box-shadow: 0 0 30px 0 #EBEFF0;
 }
 
-.bg-gradient {
-  background: linear-gradient(103.84deg, #E5FBEB 3.62%, #E9F7FD 50.63%, #EEFFF3 97%);
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .intro {
@@ -79,11 +79,25 @@ body {
   background-repeat: no-repeat;
 }
 
+.history {
+  background: url("../img/bg-history@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .intro {
     background: url("../img/bg-intro@2x.jpg");
     background-size: cover;
     background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .history {
+    background: url("../img/bg-history@2x.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 }
@@ -95,12 +109,26 @@ body {
     background-position: bottom center;
     background-repeat: no-repeat;
   }
+
+  .history {
+    background: url("../img/bg-history-mobile@1x.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   @media screen and (max-width: 1100px) {
     .intro {
       background: url("../img/bg-intro-mobile@2x.jpg");
+      background-size: cover;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+    }
+
+    .history {
+      background: url("../img/bg-history-mobile@2x.jpg");
       background-size: cover;
       background-position: bottom center;
       background-repeat: no-repeat;
@@ -119,6 +147,8 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   overflow: hidden;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
 }
 
 .button::before {
