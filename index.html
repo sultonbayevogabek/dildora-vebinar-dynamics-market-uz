@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <title>Dildora Tursunova</title>
 </head>
 <body>
@@ -55,11 +55,22 @@
   </div>
 </section>
 
-<div class="lazy-section" data-src="sections/about-seminar.html">
-  <div class="flex items-center justify-center p-40">
-    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+<section class="py-6 1200px:py-12 bg-[#F8FAFF]">
+  <div class="wrapper flex flex-col gap-6 text-center">
+    <h2 class="font-medium text-3xl 1200px:text-4xl font-bebas">Seminar haqida</h2>
+
+    <div class="aspect-[4/3] 1200px:aspect-video w-full rounded-2xl bg-gray-200 overflow-hidden">
+      <iframe class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/Q2s-WLW6UxU?si=qJt8qfBJUvxLySHn&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <button class="button block mx-auto w-full 1200px:w-1/2" data-register-button>Ro'yxatdan o'tish
+    </button>
   </div>
-</div>
+</section>
 
 <div class="lazy-section" data-src="sections/history.html">
   <div class="flex items-center justify-center p-40">
@@ -136,11 +147,59 @@
   </div>
 </div>
 
-<div class="lazy-section" data-src="sections/comments.html">
-  <div class="flex items-center justify-center p-40">
-    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+<section class="py-6 1200px:py-12">
+  <div class="wrapper flex flex-col gap-6">
+    <h2 class="font-medium text-3xl 1200px:text-4xl font-bebas text-center">Seminar ishtirokchilarining fikrlari</h2>
+
+    <div class="splide" id="comments-slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide rounded-[20px] aspect-[560/315] overflow-auto bg-gray-200">
+            <iframe class="w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/58o57PKgt6U?si=hsayp3odb7tQ-n8H&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </li>
+          <li class="splide__slide rounded-[20px] aspect-[560/315] overflow-auto bg-gray-200">
+            <iframe class="w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/9SHaj9ryJbo?si=atoVDWxJtQUcoKHo&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </li>
+          <li class="splide__slide rounded-[20px] aspect-[560/315] overflow-auto bg-gray-200">
+            <iframe class="w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/bNSypGtBhiU?si=_T9OC2WgKKBF7ADK&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </li>
+          <li class="splide__slide rounded-[20px] aspect-[560/315] overflow-auto bg-gray-200">
+            <iframe class="w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/-erOFRTV8es?si=t-u_VhIFsJ4G0MUY&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </li>
+          <li class="splide__slide rounded-[20px] aspect-[560/315] overflow-auto bg-gray-200">
+            <iframe class="w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/8fwiWMsSjxk?si=GTAQ8pqEt7xIaTPi&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </li>
+          <li class="splide__slide rounded-[20px] aspect-[560/315] overflow-auto bg-gray-200">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/45K2fBdwnOY?si=kmWzXAB5z-6jQcat"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
 <section class="py-6 1200px:py-12 bg-[#F8FAFF]">
   <div class="wrapper flex flex-col gap-4 1200px:gap-6">
@@ -535,9 +594,9 @@
   </svg>
 </button>
 
-
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="js/lazy-load.js"></script>
-
+<script src="js/slider.js"></script>
 <script src="js/timer.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/statistics.js"></script>
