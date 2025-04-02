@@ -1,18 +1,14 @@
 const commentsSlider = new Splide('#comments-slider', {
-  perPage: 4,
+  perPage: 3,
   gap: 30,
   arrows: true,
   pagination: false,
   breakpoints: {
     1200: {
-      perPage: 3,
+      perPage: 2,
       gap: 24
     },
-    800: {
-      perPage: 2,
-      gap: 12
-    },
-    500: {
+    700: {
       perPage: 1,
       gap: 12
     }

@@ -374,6 +374,9 @@
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
   }
+  .aspect-\[9\/16\] {
+    aspect-ratio: 9/16;
+  }
   .aspect-\[112\/50\] {
     aspect-ratio: 112/50;
   }
@@ -392,6 +395,9 @@
   .aspect-\[361\/432\] {
     aspect-ratio: 361/432;
   }
+  .aspect-\[560\/315\] {
+    aspect-ratio: 560/315;
+  }
   .aspect-\[614\/480\] {
     aspect-ratio: 614/480;
   }
@@ -400,6 +406,9 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
