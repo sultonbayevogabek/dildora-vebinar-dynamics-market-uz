@@ -24,7 +24,6 @@ function showError(message) {
 
 // Ma'lumotlarni sanaga qarab filterlash
 function filterDataByDate(data, startDate, endDate) {
-  console.log(startDate, endDate);
   const startTimestamp = startDate ? new Date(new Date(startDate).setHours(0, 0, 1)).getTime() : 0;
   const endTimestamp = endDate ? new Date(new Date(endDate).setHours(0, 0, 0, 0)).getTime() + (24 * 60 * 60 * 1000 - 1) : Infinity;
 
@@ -75,9 +74,7 @@ function updateTable(data) {
   const rows = [
     {name: 'Sahifaga kirganlar', value: pageVisits.length},
     {name: 'Ro\'yxatdan o\'tish tugmasini bosganlar', value: registrationClicks.length},
-    {name: 'Ma\'lumotlarini yuborganlar', value: dataSubmissions.length},
-    // {name: 'Ro\'yxatdan o\'tganlar', value: completedRegistrations.length},
-    {name: 'Obuna bo\'lish tugmasini bosganlar', value: telegramSubscriptions.length}
+    {name: 'Ma\'lumotlarini yuborganlar', value: dataSubmissions.length}
   ];
 
   statsTable.innerHTML = rows.map(row => `
