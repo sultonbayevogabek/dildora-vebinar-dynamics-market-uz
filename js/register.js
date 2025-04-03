@@ -9,7 +9,7 @@
     joinButton.disabled = true;
     await statistics.onClickTgBtn();
     joinButton.disabled = false;
-    window.location.href = 'https://t.me/dildoratursunovaofficial';
+    window.location.href = 'https://t.me/dildoratursunovaseminar';
   })
 
   if (user && user?.name && user?.phone && user?.time) {
