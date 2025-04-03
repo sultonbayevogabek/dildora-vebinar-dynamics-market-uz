@@ -8,7 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(response => response.text())
           .then(html => {
             entry.target.innerHTML = html;
+
+            if (entry.target.dataset.src === 'sections/comments.html') {
+              loadComments();
+            }
             entry.target.classList.add("loaded");
+
+            initRegisterButtons();
           });
         observer.unobserve(entry.target);
       }
