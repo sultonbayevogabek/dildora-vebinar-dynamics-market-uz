@@ -61,7 +61,7 @@
 
     <div class="aspect-[4/3] 1200px:aspect-video w-full rounded-2xl bg-gray-200 overflow-hidden">
       <iframe class="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/Q2s-WLW6UxU?si=qJt8qfBJUvxLySHn&amp;controls=0"
+              src="https://www.youtube-nocookie.com/embed/OpBi7TBWikE?si=-xr4w4_D8wXeoWGl&amp;controls=0"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -603,13 +603,23 @@
 <script src="js/script.js"></script>
 <!-- Meta Pixel Code -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
+  !function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
     'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '629394510012697');
   fbq('track', 'PageView');
