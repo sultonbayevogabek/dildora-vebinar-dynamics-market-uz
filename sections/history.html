@@ -59,14 +59,50 @@
       </div>
     </div>
 
-    <div class="hidden 1200px:block col-span-5 aspect-[692/714]">
-      <img class="w-full h-full" src="../img/mentor-history@1x.png"
-           srcset="../img/mentor-history@1x.png 1x, ../img/mentor-history@2x.png 2x" alt="Mentor intro image">
-    </div>
+    <picture class="hidden 1200px:block col-span-5 aspect-[692/714]">
+      <!-- WebP format (retina uchun 2x versiya birinchi) -->
+      <source
+        srcset="/img/mentor-history@2x.webp 2x, /img/mentor-history@1x.webp 1x"
+        type="image/webp"
+      />
+
+      <!-- PNG format (fallback va retina uchun 2x versiya) -->
+      <source
+        srcset="/img/mentor-history@2x.png 2x, /img/mentor-history@1x.png 1x"
+        type="image/png"
+      />
+
+      <!-- Fallback img (agar picture tagni qo‘llab-quvvatlamasa) -->
+      <img
+        class="w-full h-full hidden 1200px:block"
+        src="/img/mentor-history@1x.png"
+        srcset="/img/mentor-history@2x.png 2x, /img/mentor-history@1x.png 1x"
+        alt="Rasm tavsifi"
+      />
+    </picture>
 
     <div class="1200px:hidden col-span-10">
-      <img class="w-4/5 600px:w-3/5 block mx-auto aspect-[265/408]" src="../img/mentor-history-mobile@1x.png"
-           srcset="../img/mentor-history-mobile@1x.png 1x, ../img/mentor-history-mobile@2x.png 2x" alt="Mentor intro image">
+      <picture class="w-4/5 600px:w-3/5 block mx-auto aspect-[265/408]">
+        <!-- WebP format (retina uchun 2x versiya birinchi) -->
+        <source
+          srcset="/img/mentor-history-mobile@2x.webp 2x, /img/mentor-history-mobile@1x.webp 1x"
+          type="image/webp"
+        />
+
+        <!-- PNG format (fallback va retina uchun 2x versiya) -->
+        <source
+          srcset="/img/mentor-history-mobile@2x.png 2x, /img/mentor-history-mobile@1x.png 1x"
+          type="image/png"
+        />
+
+        <!-- Fallback img (agar picture tagni qo‘llab-quvvatlamasa) -->
+        <img
+          class="w-full h-full 1200px:hidden"
+          src="/img/mentor-history-mobile@1x.png"
+          srcset="/img/mentor-history-mobile@2x.png 2x, /img/mentor-history-mobile@1x.png 1x"
+          alt="Rasm tavsifi"
+        />
+      </picture>
     </div>
   </div>
 </section>

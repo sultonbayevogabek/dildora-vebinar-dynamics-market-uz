@@ -48,11 +48,30 @@
           qadamlarini o'rganamiz va 80% bizneslarda jamoa bilan bog'liq
           bo'lgan muammolarning sabab va yechimlarini ko'rib chiqamiz.</p>
 
-        <img class="block w-4/5 600px:w-3/5 1200px:hidden mx-auto aspect-[361/432]" src="img/mentor-intro@1x.png"
-             srcset="img/mentor-intro@1x.png 1x, img/mentor-intro@2x.png 2x" alt="Mentor intro image">
-
         <button class="button w-full 1200px:w-auto mt-0 1200px:mt-10" data-register-button>Ro'yxatdan o'tish
         </button>
+
+        <picture class="block w-4/5 600px:w-3/5 1200px:hidden mx-auto aspect-[361/432]">
+          <!-- WebP format (retina uchun 2x versiya birinchi) -->
+          <source
+            srcset="img/mentor-intro@2x.webp 2x, img/mentor-intro@1x.webp 1x"
+            type="image/webp"
+          />
+
+          <!-- PNG format (fallback va retina uchun 2x versiya) -->
+          <source
+            srcset="img/mentor-intro@2x.png 2x, img/mentor-intro@1x.png 1x"
+            type="image/png"
+          />
+
+          <!-- Fallback img (agar picture tagni qo‘llab-quvvatlamasa) -->
+          <img
+            class="w-full h-full"
+            src="img/mentor-intro@1x.png"
+            srcset="img/mentor-intro@2x.png 2x, img/mentor-intro@1x.png 1x"
+            alt="Rasm tavsifi"
+          />
+        </picture>
       </div>
     </div>
   </div>
