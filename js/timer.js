@@ -1,6 +1,6 @@
-const timers = document.querySelectorAll('[data-timer]');
-
 function startCountdown(seconds) {
+  const timers = document.querySelectorAll('[data-timer]');
+
   function formatTime(s) {
     const minutes = String(Math.floor(s / 60)).padStart(2, '0');
     const seconds = String(s % 60).padStart(2, '0');
@@ -22,5 +22,3 @@ function startCountdown(seconds) {
     }
   }, 1000);
 }
-
-startCountdown(18*60-1);

@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (entry.target.dataset.src === 'sections/comments.html') {
               loadComments();
             }
+
+            if (entry.target.dataset.src === 'sections/tariffs.html') {
+              startCountdown(18*60-1);
+            }
+
             entry.target.classList.add("loaded");
 
             initRegisterButtons();
