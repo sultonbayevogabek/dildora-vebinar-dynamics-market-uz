@@ -22,3 +22,5 @@ function startCountdown(seconds) {
     }
   }, 1000);
 }
+
+startCountdown(18 * 60 - 1);
