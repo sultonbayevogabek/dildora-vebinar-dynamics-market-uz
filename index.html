@@ -433,14 +433,11 @@
   </div>
 </section>
 
-
-<div class="p-5"></div>
-
 <div
-  class="fixed inset-[0] grid place-items-center overflow-[auto] z-[20] bg-[#0000004D] bg-opacity-[50] backdrop-blur-[5px] p-[8px] hidden"
+  class="fixed inset-[0] grid place-items-center overflow-[auto] z-[20] bg-[#0000004D] bg-opacity-[50] backdrop-blur-[5px] p-[8px] visually-hidden"
   data-modal-backdrop data-modal-close>
   <form data-form
-        class="w-full max-w-[520px] p-[20px] 800px:p-[40px] bg-[#fff] rounded-[8px] 1100px:rounded-[12px] relative">
+        class="w-full max-w-[520px] p-[20px] 800px:p-[40px] bg-[#fff] rounded-[8px] 1100px:rounded-[12px] relative hidden">
     <h2 class="text-[32px] [1100px]:text-[40px] font-bebas leading-[1] mb-[16px]">
       Ro'yxatdan o'tish
     </h2>
@@ -492,6 +489,37 @@
          src="img/x.svg"
          alt="close icon">
   </form>
+
+  <div
+        class="w-full max-w-[520px] py-[20px] 800px:py-[40px] bg-[#fff] rounded-[8px] 1100px:rounded-[12px] relative">
+    <h2 class="text-[32px] [1100px]:text-[40px] font-bebas leading-[1] mb-[16px] px-[20px] 800px:px-[40px]">
+      Ro'yxatdan o'tish
+    </h2>
+
+    <img data-modal-close class="w-[12px] 1100px:w-[16px] aspect-square absolute top-[24px] right-[24px] cursor-pointer"
+         src="img/x.svg"
+         alt="close icon">
+
+    <div>
+      <script>!function (a, m, o, c, r, m) {
+        a[o + c] = a[o + c] || {
+          setMeta: function (p) {
+            this.params = (this.params || []).concat([p])
+          }
+        }, a[o + r] = a[o + r] || function (f) {
+          a[o + r].f = (a[o + r].f || []).concat([f])
+        }, a[o + r]({
+          id: "1518782",
+          hash: "8457b3fcbd7afa60c603cac7ef2795fe",
+          locale: "ru"
+        }), a[o + m] = a[o + m] || function (f, k) {
+          a[o + m].f = (a[o + m].f || []).concat([[f, k]])
+        }
+      }(window, 0, "amo_forms_", "params", "load", "loaded");</script>
+      <script id="amoforms_script_1518782" async="async" charset="utf-8"
+              src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1743840306"></script>
+    </div>
+  </div>
 </div>
 
 <!--Scroll to top-->
@@ -510,6 +538,7 @@
 <script src="js/script.js"></script>
 <script src="js/load-comments.js"></script>
 <script src="js/lazy-load.js"></script>
+
 <!-- Meta Pixel Code -->
 <script>
   !function (f, b, e, v, n, t, s) {

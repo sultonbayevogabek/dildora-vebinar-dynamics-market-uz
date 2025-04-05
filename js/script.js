@@ -44,13 +44,8 @@ function initRegisterButtons() {
 
   registerButtons.forEach(async button => {
     button.addEventListener('click', async (e) => {
-      const tariff = e.target.getAttribute('data-tariff');
-      if (tariff) {
-        form.querySelector('#tariff').value = tariff;
-      } else {
-        form.querySelector('#tariff').value = 'premium';
-      }
-      modalBackdrop.classList.remove('hidden');
+      modalBackdrop.classList.remove('visually-hidden');
+      // document.getElementById("register").scrollIntoView({ behavior: "smooth" });
       await statistics.onClickRegBtn();
     })
   })
@@ -59,7 +54,7 @@ function initRegisterButtons() {
 initRegisterButtons();
 
 function closeModal() {
-  modalBackdrop.classList.add('hidden');
+  modalBackdrop.classList.add('visually-hidden');
 }
 
 window.addEventListener('keydown', e => {
@@ -86,7 +81,7 @@ form.addEventListener('submit', async e => {
 
   if (!name.length) {
     formAlert.textContent = 'Ismingizni kiriting';
-    formAlert.classList.remove('hidden');
+    formAlert.classList.remove('visually-hidden');
     return;
   }
 
