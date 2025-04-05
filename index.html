@@ -108,17 +108,331 @@
   </div>
 </div>
 
-<div class="lazy-section" data-src="sections/tariffs.html">
-  <div class="flex items-center justify-center p-40">
-    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
-  </div>
-</div>
+<section class="py-6 1200px:py-12 bg-[#F8FAFF]">
+  <div class="wrapper flex flex-col gap-4 1200px:gap-6">
+    <h2 class="font-medium text-3xl 1200px:text-4xl font-bebas text-center">Bizning <span class="text-[#5E46E4]">ta'riflar</span>
+    </h2>
 
-<div class="lazy-section" data-src="sections/two-way.html">
-  <div class="flex items-center justify-center p-40">
-    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+    <div
+      class="flex flex-col 900px:flex-row items-center justify-between gap-4 900px:gap-[24px] py-[12px] px-[20px] rounded-[16px] 800px:rounded-[20px] 1200:rounded-[28px] custom-shadow bg-[rgb(255,255,255)] border border-[#DFEDF4] text-[#28424E]">
+
+      <div class="flex items-start justify-center gap-[12px]">
+        <img class="w-7 1200px:w-8 shrink-0" src="img/exclamation.png" alt="">
+        <div class="1200px:text-[18px]">Ushbu chegirma 18 daqiqa ichida ro'yxatdan o'tganlar uchun amalga oshadi</div>
+      </div>
+
+      <div class="flex items-center gap-[16px] leading-[1]" data-timer>
+        <img class="w-[40px] mr-[12px]" src="img/timer.png" alt="">
+
+        <div class="flex flex-col gap-[4px] text-center">
+          <div class="font-bebas text-[32px]" data-minutes>17</div>
+          <div class="text-[12px]">daqiqa</div>
+        </div>
+
+        <div class="w-[1px] h-[30px] bg-[#DFEDF4]"></div>
+
+        <div class="flex flex-col gap-[4px] text-center">
+          <div class="font-bebas text-[32px]" data-seconds>59</div>
+          <div class="text-[12px]">soniya</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-6 gap-4 1200px:gap-6">
+      <div
+        class="col-span-6 700px:col-span-3 1200px:col-span-2 flex flex-col gap-5 bg-white border border-[#DFEDF4] rounded-2xl p-4 1200px:p-6 custom-shadow">
+        <h3 class="font-medium text-2xl 1200px:text-3xl">Standart</h3>
+
+        <ul class="flex flex-col gap-2 font-thin">
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <del class="1200px:text-xl text-[#00000099]">Sertifikat</del>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Seminarda to'liq ishtirok etish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <del class="1200px:text-xl text-[#00000099]">Coffe break</del>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <del class="1200px:text-xl text-[#00000099]">Motivatsiya video darsligi bepul (hoziroq ro'yxatdan
+              o'tganlarga)
+            </del>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <del class="1200px:text-xl text-[#00000099]">Birinchi qatordagi joy</del>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <del class="1200px:text-xl text-[#00000099]">Seminardan keyin 30 kishilik savol javob seminari</del>
+          </li>
+        </ul>
+
+        <div class="flex flex-col text-center">
+          <p class="text-[#00000099] text-[14px]">Chegirmali narxi</p>
+
+          <div class="flex gap-2 items-center justify-center">
+            <div class="font-medium text-2xl 1200px:text-3xl">249 000 uzs</div>
+            <del class="text-[#000000CC] text-[14px]">900 000 uzs</del>
+          </div>
+        </div>
+
+        <button class="button block w-full" data-register-button data-tariff="standart">Seminarda qatnashish
+        </button>
+
+        <div class="flex gap-3 items-center justify-center">
+          <img class="w-5 shrink-0" src="img/exclamation.png" alt="">
+          <p class="font-thin text-[14px]">Joylar soni cheklangan</p>
+        </div>
+      </div>
+      <div
+        class="col-span-6 700px:col-span-3 1200px:col-span-2 flex flex-col gap-5 bg-white border border-[#DFEDF4] rounded-2xl p-4 1200px:p-6 custom-shadow relative">
+        <div
+          class="absolute top-[-10px] left-[50%] translate-x-[-50%] px-4 flex items-center justify-center text-[14px] bg-[linear-gradient(273.23deg,#150534_-0.34%,#3E0F9A_98.85%)] h-[30px] rounded-[15px] text-white">
+          Tavsiya qilamiz
+        </div>
+
+        <h3 class="font-medium text-2xl 1200px:text-3xl">Premium</h3>
+
+        <ul class="flex flex-col gap-2 font-thin">
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Sertifikat</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Seminarda to'liq ishtirok etish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Coffe break </p>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Motivatsiya video darsligi bepul (hoziroq ro'yxatdan o'tganlarga)</p>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <del class="1200px:text-xl text-[#00000099]">Birinchi qatordagi joy</del>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <del class="1200px:text-xl text-[#00000099]">Seminardan keyin 30 kishilik savol javob seminari</del>
+          </li>
+        </ul>
+
+        <div class="flex flex-col text-center">
+          <p class="text-[#00000099] text-[14px]">Chegirmali narxi</p>
+
+          <div class="flex gap-2 items-center justify-center">
+            <div class="font-medium text-2xl 1200px:text-3xl">299 000 uzs</div>
+            <del class="text-[#000000CC] text-[14px]">999 000 uzs</del>
+          </div>
+        </div>
+
+        <button class="button block w-full" data-register-button data-tariff="premium">Seminarda qatnashish
+        </button>
+
+        <div class="flex gap-3 items-center justify-center">
+          <img class="w-5 shrink-0" src="img/exclamation.png" alt="">
+          <p class="font-thin text-[14px]">Joylar soni cheklangan</p>
+        </div>
+      </div>
+      <div
+        class="col-span-6 700px:col-span-3 1200px:col-span-2 flex flex-col gap-5 bg-white border border-[#DFEDF4] rounded-2xl p-4 1200px:p-6 custom-shadow">
+        <h3 class="font-medium text-2xl 1200px:text-3xl">VIP</h3>
+
+        <ul class="flex flex-col gap-2 font-thin">
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Sertifikat</p>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Seminarda to'liq ishtirok etish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Coffe break </p>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Motivatsiya video darsligi bepul (hoziroq ro'yxatdan o'tganlarga)</p>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Birinchi qatordagi joy</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Seminardan keyin 30 kishilik savol javob seminari</p>
+          </li>
+        </ul>
+
+        <div class="flex flex-col text-center">
+          <p class="text-[#00000099] text-[14px]">Chegirmali narxi</p>
+
+          <div class="flex gap-2 items-center justify-center">
+            <div class="font-medium text-2xl 1200px:text-3xl">999 000 uzs</div>
+            <del class="text-[#000000CC] text-[14px]">1 990 000 uzs</del>
+          </div>
+        </div>
+
+        <button class="button block w-full" data-register-button data-tariff="vip">Seminarda qatnashish
+        </button>
+
+        <div class="flex gap-3 items-center justify-center">
+          <img class="w-5 shrink-0" src="img/exclamation.png" alt="">
+          <p class="font-thin text-[14px]">Joylar soni cheklangan</p>
+        </div>
+      </div>
+
+      <div
+        class="col-span-6 rounded-2xl border border-[#DFEDF4] p-4 1200px:p-5 flex flex-col 600px:flex-row 600px:items-center justify-center gap-4 1200px:gap-5 bg-white">
+        <img class="w-[50px] 1200px:w-[70px] shrink-0 aspect-square" src="img/hundred.png" alt="">
+
+        <p class="1200px:text-xl">Garantiya!! Agar seminarda hech qanday foyda olmagan bo’lsangiz, pulingizni 100%
+          qaytaramiz!</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<section class="py-6 1200px:py-12">
+  <div class="wrapper flex flex-col gap-4 1200px:gap-10">
+    <h2 class="font-medium text-3xl 1200px:text-4xl font-bebas text-center">Oldingizda <span class="text-[#5E46E4]">ikkita yo'l bor</span>
+    </h2>
+
+    <div class="grid grid-cols-2 gap-4 1200px:gap-6">
+      <div
+        class="col-span-2 700px:col-span-1 flex flex-col gap-6 bg-[#E7FAE3] border border-[#DFEDF4] rounded-2xl p-4 1200px:p-6 custom-shadow relative">
+        <img class="hidden 1200px:block absolute top-[-30px] right-0 w-6" src="img/left.svg" alt="">
+
+        <h3 class="font-medium text-2xl 1200px:text-3xl">Seminarda qatnashish</h3>
+
+        <ul class="flex flex-col gap-4 font-thin">
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Aniq formula asosida tez fursatda jamoa qurish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Korxonada birdamlik va halollik muhtini yaratish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">To'g'ri xodimlarni ishga olish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Xodimlarning motivatsiyasini ko'tarish orqali 2x samaradorlik</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Xodimlarning ketib qolishini oldini olish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/success.svg" alt="">
+
+            <p class="1200px:text-xl">Rahbarsz ishlaydigan tizim</p>
+          </li>
+        </ul>
+
+        <div
+          class="flex items-start gap-3 900px:gap-[18px] py-[12px] px-[20px] rounded-[16px] 800px:rounded-[20px] 1200:rounded-[28px] custom-shadow bg-white font-thin">
+          <img class="w-10 1200px:w-12" src="img/good.svg" alt="">
+
+          <p>Bularning natijasida: qisqa muddatda biznesda juda tez o'sish va rahbarsiz
+            tizimli ishlaydigan jamoa</p>
+        </div>
+      </div>
+
+      <div
+        class="col-span-2 700px:col-span-1 flex flex-col gap-6 bg-[#FFEDED] border border-[#DFEDF4] rounded-2xl p-4 1200px:p-6 custom-shadow relative">
+        <img class="hidden 1200px:block absolute top-[-30px] left-0 w-6" src="img/right.svg" alt="">
+
+        <h3 class="font-medium text-2xl 1200px:text-3xl">Seminarda qatnashmaslik</h3>
+
+        <ul class="flex flex-col gap-4 font-thin">
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <p class="1200px:text-xl">Yillar davomida jamoa yig'a olmaslik</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <p class="1200px:text-xl">Korxonada g'iybatlar, yolg'on va o'g'riliklar ko'payishi</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <p class="1200px:text-xl">Har doim mos bo'lmagan xodimlarni ishga olish</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <p class="1200px:text-xl">Har doim yaxshi xodimlarni ushlab qololmaslik</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <p class="1200px:text-xl">Hardoim tepasida turib ishlatishga majbur</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <img class="shrink-0 w-6 1200px:w-7" src="img/fail.svg" alt="">
+
+            <p class="1200px:text-xl">Boshqaruv bilimi yo'qligi tufayli tartibsizlik</p>
+          </li>
+        </ul>
+
+        <div
+          class="flex items-start gap-3 900px:gap-[18px] py-[12px] px-[20px] rounded-[16px] 800px:rounded-[20px] 1200:rounded-[28px] custom-shadow bg-white font-thin">
+          <img class="w-10 1200px:w-12" src="img/bad.svg" alt="">
+
+          <p>Bularning natijasida: Biznesda o'sa olmaslik va 1-2 yilda umuman biznesdan chiqib ketish</p>
+        </div>
+      </div>
+    </div>
+    <button class="button block mx-auto w-full 1200px:w-1/2" data-register-button>Ro'yxatdan o'tish
+    </button>
+  </div>
+</section>
+
 
 <div class="p-5"></div>
 
